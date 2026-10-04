@@ -1,0 +1,17 @@
+{
+  "slug": "microsoft-rpo",
+  "date": "2026-10-04",
+  "category": "ai",
+  "kind": "reading",
+  "published": true,
+  "title_zh": "读微软业绩指标：RPO 到收入，中间还有时间",
+  "title_en": "Reading Microsoft’s metrics: the time between RPO and revenue",
+  "summary_zh": "指标定义值得和数字一起读。订单、未来履约义务与当期收入，描述的是不同环节。",
+  "summary_en": "Definitions deserve as much attention as figures. Bookings, remaining obligations and current revenue describe different stages.",
+  "source_title": "Microsoft FY26 Q4 — Investor Metrics",
+  "source_author": "Microsoft Investor Relations",
+  "source_date": "2026-07-29",
+  "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/metrics",
+  "body_zh": "## 为什么选这份资料\n\n微软把关键指标定义放在表格旁边，能帮助读者分清商业预订、剩余履约义务和云收入的口径。\n\n## 带着时间去读\n\nRPO 对应未来履约及收入确认，不能直接当作当期收入，更不能替代回款。读 AI 商业化时，把需求信号、实际交付和收入兑现分别跟踪，也要注意云收入包含多项业务。\n\n## 下一步验证\n\n还要结合财务报表观察现金流、资本投入与成本。仅凭 RPO 或收入增长，无法计算 AI 投资回报率。",
+  "body_en": "## Why read it\n\nMicrosoft places metric definitions beside the figures, helping distinguish commercial bookings, remaining performance obligations and cloud revenue.\n\n## Read with timing in mind\n\nRPO concerns future performance and revenue recognition. It is neither current revenue nor cash collected. In AI commercialization research, track demand signals, delivery and recognized revenue separately. Cloud revenue also combines multiple businesses.\n\n## What to verify next\n\nFinancial statements are needed to examine cash flow, capital spending and costs. RPO or revenue growth alone cannot establish a return on AI investment."
+}
