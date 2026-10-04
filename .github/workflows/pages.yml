@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Extract website build code
-        run: unzip -o site-source.zip -x 'content/*' '.pages.yml' 'README.md' '网站维护手册.md' '.gitignore'
+        run: unzip -o site-source.zip -x 'content/*' '.pages.yml' 'README.md' '网站维护手册.md' '.gitignore' 'tests/*'
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
