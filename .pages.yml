@@ -1,0 +1,61 @@
+settings:
+  commit:
+    identity: app
+content:
+  - name: articles
+    label: 双语文章 / Articles
+    type: collection
+    path: content/posts
+    format: json
+    filename: '{fields.slug}.json'
+    view:
+      primary: title_zh
+      fields: [title_zh, category, date, published]
+      sort: date
+      order: desc
+    fields:
+      - {name: slug, label: 网址名（小写英文与连字符）, type: string, required: true}
+      - {name: date, label: 本站发布日期（YYYY-MM-DD）, type: string, required: true}
+      - name: category
+        label: 栏目
+        type: select
+        required: true
+        options:
+          values:
+            - {label: A 股研究, name: a-shares}
+            - {label: AI 与商业, name: ai}
+      - name: kind
+        label: 内容类型
+        type: select
+        required: true
+        options:
+          values:
+            - {label: 阅读推荐, name: reading}
+            - {label: 原创研究, name: original}
+      - {name: published, label: 发布到网站（关闭为草稿）, type: boolean, default: false}
+      - {name: title_zh, label: 中文标题, type: string, required: true}
+      - {name: title_en, label: English title, type: string, required: true}
+      - {name: summary_zh, label: 中文摘要, type: text, required: true}
+      - {name: summary_en, label: English summary, type: text, required: true}
+      - {name: body_zh, label: 中文正文（支持基础 Markdown）, type: text, required: true}
+      - {name: body_en, label: English body (basic Markdown), type: text, required: true}
+      - {name: author_zh, label: 原创中文署名, type: string, default: 海边的卡夫卡}
+      - {name: author_en, label: Original author, type: string, default: Kafka by the Sea}
+      - {name: source_title, label: 原文标题（阅读推荐必填）, type: string}
+      - {name: source_author, label: 原文作者 / 机构, type: string}
+      - {name: source_date, label: 原文日期（YYYY-MM-DD）, type: string}
+      - {name: source_url, label: 原文链接（https://）, type: string}
+  - name: site
+    label: 网站介绍 / Site settings
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - {name: name_zh, label: 中文笔名, type: string, required: true}
+      - {name: name_en, label: English name, type: string, required: true}
+      - {name: headline_zh, label: 中文首页标题, type: text, required: true}
+      - {name: headline_en, label: English headline, type: text, required: true}
+      - {name: intro_zh, label: 中文介绍, type: text, required: true}
+      - {name: intro_en, label: English introduction, type: text, required: true}
+      - {name: site_url, label: 正式网址, type: string}
+      - {name: cms_url, label: 后台地址, type: string, required: true}
