@@ -1,0 +1,3 @@
+const search = document.querySelector('#search');
+search?.addEventListener('input',()=>{let count=0;const term=search.value.trim().toLowerCase();document.querySelectorAll('.post-card').forEach(card=>{card.hidden=!card.dataset.search.includes(term);if(!card.hidden)count++;});document.querySelector('#empty').hidden=count>0;});
+document.querySelectorAll('.copy-feed').forEach(button=>button.addEventListener('click',async()=>{const url=new URL(button.dataset.path,location.origin).href;const status=document.querySelector('#copy-status');try{await navigator.clipboard.writeText(url);status.textContent=document.documentElement.lang.startsWith('zh')?'已复制订阅地址。':'Feed URL copied.';}catch{status.textContent=url;}}));
